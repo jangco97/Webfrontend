@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), eslint()],
   server: {
     host: '3.34.142.52',
-    port: 3000,
+    port: 5000,
     proxy: {
       '/api': {
         target: 'http://13.124.204.159:8080',
