@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.PROD ? '' : '13.124.204.159',
+  baseURL: import.meta.env.PROD ? '' : 'http://13.124.204.159:8080',
 });
 
 axiosInstance.interceptors.request.use(
