@@ -5,6 +5,13 @@ import eslint from 'vite-plugin-eslint';
 export default defineConfig({
   plugins: [react(), eslint()],
   server: {
-    host: true,
+    host: '3.34.142.52',
+    pert: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://13.124.204.159:8080',
+        changeOrigin: true,
+      },
+    },
   },
 });
